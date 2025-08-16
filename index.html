@@ -38,36 +38,36 @@
 
         .heart-shape {
             position: relative;
-            width: 300px;
-            height: 300px;
+            width: 200px;   /* antes 300px */
+            height: 200px;  /* antes 300px */
             background-color: #e91e63;
             transform: rotate(45deg);
             box-shadow: 
-                0 0 40px #e91e63, 
-                0 0 80px #e91e63,
-                0 0 120px #e91e63;
+                0 0 25px #e91e63,  /* reduje intensidades para el nuevo tamaño */
+                0 0 50px #e91e63,
+                0 0 75px #e91e63;
             animation: heartbeat 1.5s ease infinite;
             z-index: 10;
-            border-radius: 20px;
+            border-radius: 15px; /* ajustado */
         }
 
         .heart-shape:before,
         .heart-shape:after {
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 200px;   /* antes 300px */
+            height: 200px;  /* antes 300px */
             content: '';
             border-radius: 50%;
             background-color: #e91e63;
         }
 
         .heart-shape:before {
-            left: -150px;
+            left: -100px;   /* la mitad de 200px */
             top: 0;
         }
 
         .heart-shape:after {
-            top: -150px;
+            top: -100px;    /* la mitad de 200px */
             left: 0;
         }
 
@@ -210,7 +210,7 @@
         
         <div class="heart-content">
             <div class="name">Daiana</div>
-            <div class="message">I would gladly break my heart for you</div>
+            <div class="message">I would gladly break my <br> heart for you</div>
         </div>
 
         <!-- Control de audio estilizado -->
@@ -331,6 +331,7 @@
     </script>
 </body>
 </html>
+
 
 
 
